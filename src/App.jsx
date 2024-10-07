@@ -9,6 +9,10 @@ import NewPage from './pages/newPage';
 import LoginPage from './pages/loginPage';
 import SignupPage from './pages/signupPage';
 import AccountPage from './pages/accountPage';
+import ElectronicPage from './pages/electronicPage';
+import EstatePage from './pages/estatePage';
+import WorkPage from './pages/workPage';
+import AnimalsPage from './pages/animalsPage';
 
 function App() {
 
@@ -24,6 +28,10 @@ function App() {
     <Route path="/login" element={<LoginPage />} />
     <Route path="/signup" element={<SignupPage />} />
     <Route path="/account" element={<AccountPage />} />
+    <Route path="/electronic" element={<ElectronicPage />} />
+    <Route path="/estate" element={<EstatePage />} />
+    <Route path="/work" element={<WorkPage />} />
+    <Route path="/animals" element={<AnimalsPage />} />
     </Routes>
     </>
   )

@@ -214,117 +214,138 @@
   "son": [
     {
       "id": "1",
-      "title": "Classic T-Shirt",
-      "price": 29.99,
+      "title": "Mənzil",
+      "price": 60000,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "High-quality cotton classic fit t-shirt.",
-      "categories": [
-        "clothing",
-        "men"
-      ],
+      "categories": "Daşinmaz əmlak",
       "name": "John Doe",
       "number": "555-123-4567"
     },
     {
       "id": "2",
-      "title": "Women's Dress",
-      "price": 49.99,
+      "title": "Mənzil",
+      "price": 85000,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Chic and comfortable dress, perfect for summer.",
-      "categories": [
-        "clothing",
-        "women"
-      ],
+      "categories": "Daşinmaz əmlak",
       "name": "Jane Smith",
       "number": "555-234-5678"
     },
     {
       "id": "3",
-      "title": "Sneaker Shoes",
-      "price": 89.99,
+      "title": "PlayStation",
+      "price": 890,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Sneaker shoes that combine comfort and style.",
-      "categories": [
-        "shoes",
-        "men"
-      ],
+      "categories": "Elektronika",
       "name": "Michael Brown",
       "number": "555-345-6789"
     },
     {
       "id": "4",
-      "title": "Backpack",
-      "price": 39.99,
+      "title": "Telefon",
+      "price": 390,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Spacious backpack suitable for daily use.",
-      "categories": [
-        "accessory",
-        "bag"
-      ],
+      "categories": "Elektronika",
       "name": "Emily Davis",
       "number": "555-456-7890"
     },
     {
       "id": "5",
-      "title": "Winter Jacket",
-      "price": 129.99,
+      "title": "Mühasib",
+      "price": 1200,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Warm jacket designed for cold weather.",
-      "categories": [
-        "clothing",
-        "men"
-      ],
+      "categories": "İş elanlari",
       "name": "David Wilson",
       "number": "555-567-8901"
     },
     {
       "id": "6",
-      "title": "Summer Sandals",
-      "price": 34.99,
+      "title": "Satici",
+      "price": 500,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Lightweight and comfortable summer sandals.",
-      "categories": [
-        "shoes",
-        "women"
-      ],
+      "categories": "İş elanlari",
       "name": "Sophia Johnson",
       "number": "555-678-9012"
     },
     {
       "id": "7",
-      "title": "Smartwatch",
-      "price": 199.99,
+      "title": "Dovşan",
+      "price": 40,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Ideal smartwatch for fitness tracking and notifications.",
-      "categories": [
-        "technology",
-        "accessory"
-      ],
+      "categories": "Heyvanlar",
       "name": "James Williams",
       "number": "555-789-0123"
     },
     {
       "id": "8",
-      "title": "Coffee Mug",
-      "price": 12.99,
+      "title": "Pişik",
+      "price": 100,
       "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
       "description": "Elegant ceramic coffee mug.",
-      "categories": [
-        "home goods",
-        "kitchen"
-      ],
+      "categories": "Heyvanlar",
       "name": "Olivia Garcia",
       "number": "555-890-1234"
     },
     {
-      "id": "1728300523313",
-      "categories": "",
-      "title": "aa",
-      "description": "aa",
-      "price": "4584",
-      "image": "https://media.autoexpress.co.uk/image/private/s--vZkbi5D1--/f_auto,t_primary-image-mobile@1/v1685458010/autoexpress/2023/05/Porsche%20911%20GTS%20UK%20001_otx6j7.jpg",
-      "name": "ass",
-      "number": "12313165"
+      "id": "1728325908432",
+      "categories": "Elektronika",
+      "title": "Garmin",
+      "description": "za",
+      "price": "900",
+      "image": "https://res.garmin.com/en/products/010-02638-00/v/cf-lg-ecad19d9-b848-4ed5-ad97-783bcc271960.jpg",
+      "name": "az",
+      "number": "12",
+      "userEmail": "azer@gmail.com"
+    },
+    {
+      "id": "1728326042361",
+      "categories": "Heyvanlar",
+      "title": "it",
+      "description": "it",
+      "price": "100",
+      "image": "https://www.cdc.gov/healthy-pets/media/images/2024/04/GettyImages-598175960-cute-dog-headshot.jpg",
+      "name": "Ali",
+      "number": "0000000000",
+      "userEmail": "ali@gmail.com"
+    },
+    {
+      "id": "1728326161860",
+      "categories": "Elektronika",
+      "title": "Macbook Air",
+      "description": "Macbook Air",
+      "price": "2000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0Y2vcVhLFAvAAp3ZO9pSlKVHCjBKI4pT8g&s",
+      "name": "Azer",
+      "number": "111111111",
+      "userEmail": "azer@gmail.com"
+    },
+    {
+      "id": "1728333910526",
+      "categories": "Daşinmaz əmlak",
+      "title": "Mənzil",
+      "description": "Mənzil",
+      "price": "250000",
+      "image": "https://cdn.brookfieldresidential.net/-/media/brp/global/modules/news-and-blog/corporate/hidden-costs-of-new-build-home/mosaic-plan-5-exterior-at-barefoot-lakes-by-brookfield-residential-in-firestone-co-1189.jpg?rev=96a37f1155f143f0b8279981f15d1afd&cx=0.5&cy=0.5",
+      "name": "Ali",
+      "number": "0000000000",
+      "userEmail": "ali@gmail.com"
+    },
+    {
+      "id": "1728334214361",
+      "categories": "İş elanlari",
+      "title": "Sürücü",
+      "description": "Sürücü",
+      "price": "800",
+      "image": "https://talhealthcare.com/wp-content/uploads/2019/12/2019-12-celebrating-new-job-scaled.jpg",
+      "name": "Azer",
+      "number": "111111111",
+      "userEmail": "azer@gmail.com"
     }
   ],
   "users": [
@@ -332,6 +353,12 @@
       "id": "2ecd",
       "name": "azer",
       "email": "azer@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "9e5b",
+      "name": "ali",
+      "email": "ali@gmail.com",
       "password": "123456"
     }
   ]
