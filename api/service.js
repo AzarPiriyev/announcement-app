@@ -21,3 +21,9 @@ export const getSonById = async (id) => {
     const son = await response.json();
     return son;
 };
+
+export const getUsers = async () => {
+    const response = await fetch('http://localhost:3000/users');
+    const users = await response.json();
+    return users;
+};

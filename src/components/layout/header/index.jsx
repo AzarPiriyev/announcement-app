@@ -1,11 +1,20 @@
-import React from 'react'
+import React  from 'react'
 import MainContainer from '../../common/mainContainer'
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { useStore } from '../../../store';
+
 
 const Header = () => {
+  const { isLogin, setFields } = useStore();
+
+  const handleLogout = () => {
+    localStorage.removeItem("isLogin"); // Kullanıcı giriş bilgilerini sil
+    localStorage.removeItem("username"); // Kullanıcı adını sil
+    setFields({ isLogin: false }); // Durumu güncelle
+  };
   return (
     <div>
       <MainContainer>
@@ -19,10 +28,14 @@ const Header = () => {
                 <FaHeart className='text-[#8d94ad]  h-[25px] w-[25px]'/>
                 <p className='text-[15px] font-normal text-[#8d94ad]'>Seçilmişlər</p>
                 </div></Link>
-                <div className='flex gap-[5px]'>
+                {isLogin ? (
+              <button onClick={handleLogout} className='text-[15px] font-normal text-[#8d94ad]  cursor-pointer'>Logout</button>
+            ) : (
+                <Link to={'/login'}><div className='flex gap-[5px]'>
                 <MdAccountCircle className='text-[#8d94ad]  h-[25px] w-[25px]'/>
                 <p className='text-[15px] font-normal text-[#8d94ad]'>Giriş</p>
-                </div>
+                </div></Link>
+                )}
             </div>
         </div>
       </MainContainer>
@@ -35,7 +48,10 @@ const Header = () => {
             <input type="text" name="" id=""  className='py-[9px] px-[9px] border rounded-l-[8px] w-[400px]'/>
             <button className='bg-[#7ed321] py-[10px] px-[10px] rounded-r-[8px] text-white'>Tap</button>
         </div>
-        <button className='bg-[#7ed321] py-[10px] px-[10px] rounded-[8px] text-white'>Yeni elan</button>
+        <div className='flex gap-[20px]'>
+        <Link to={'/account'}><button className='bg-[#7ed321] py-[10px] px-[10px] rounded-[8px] text-white'>Kabinet</button></Link>
+        <Link to={'/new'}><button className='bg-[#7ed321] py-[10px] px-[10px] rounded-[8px] text-white'>Yeni elan</button></Link>
+        </div>
         </div>
         </MainContainer>
       </div>

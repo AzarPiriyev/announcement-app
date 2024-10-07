@@ -6,6 +6,9 @@ import HomePage from './pages/homePage';
 import DetailPage from './pages/detailPage';
 import WishlistPage from './pages/wishlist';
 import NewPage from './pages/newPage';
+import LoginPage from './pages/loginPage';
+import SignupPage from './pages/signupPage';
+import AccountPage from './pages/accountPage';
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
     <Route path="/detail/:id" element={<DetailPage />} />
     <Route path="/wishlist" element={<WishlistPage />} />
     <Route path="/new" element={<NewPage />} />
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/signup" element={<SignupPage />} />
+    <Route path="/account" element={<AccountPage />} />
     </Routes>
     </>
   )

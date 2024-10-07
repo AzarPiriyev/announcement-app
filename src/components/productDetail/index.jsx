@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'; // Import useParams
+import { useParams } from 'react-router-dom';
 import MainContainer from '../common/mainContainer';
-import { FaRegHeart } from "react-icons/fa";
-import { getSonById } from '../../../api/service'; // Import your getSonById function
+import { FaRegHeart, FaHeart } from "react-icons/fa";
+import { getSonById } from '../../../api/service';
+import { useStore } from '../../store';
 
 const ProductDetail = () => {
-    const { id } = useParams(); // Get the ID from the URL
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
+    const { customFav, setFields } = useStore();
 
     const fetchProduct = async () => {
-        const productData = await getSonById(id); // Fetch product by ID
+        const productData = await getSonById(id);
         setProduct(productData);
     };
 
@@ -17,10 +19,22 @@ const ProductDetail = () => {
         fetchProduct();
     }, [id]);
 
-    if (!product) return <div>Loading...</div>; // Handle loading state
+    const handleFavorite = () => {
+        const isFavorited = customFav.some(item => item.id === product.id);
+        
+        if (isFavorited) {
+            // Ürün zaten favorilerdeyse sil
+            const updatedFavorites = customFav.filter(item => item.id !== product.id);
+            setFields({ customFav: updatedFavorites });
+        } else {
+            // Ürün favorilere ekle
+            setFields({ customFav: [...customFav, product] });
+        }
+    };
 
+    if (!product) return <div>Loading...</div>;
 
-    
+    const isFavorited = customFav.some(item => item.id === product.id);
 
     return (
         <MainContainer>
@@ -31,8 +45,12 @@ const ProductDetail = () => {
                         <img src={product.image} alt={product.title} className='w-[630px] h-[480px] border-2' />
                     </div>
                     <div className='py-[15px]'>
-                        <FaRegHeart className='text-[#000000] h-[25px] w-[25px] mb-[15px]' />
-                        <p className='text-[18px] font-normal'>Category</p>
+                        {isFavorited ? (
+                            <FaHeart className='text-red-500 h-[25px] w-[25px] mb-[15px]' onClick={handleFavorite} />
+                        ) : (
+                            <FaRegHeart className='text-[#000000] h-[25px] w-[25px] mb-[15px]' onClick={handleFavorite} />
+                        )}
+                        <p className='text-[18px] font-normal'>{product.categories}</p>
                         <p className='text-[32px] font-semibold py-[15px]'>{product.price} AZN</p>
                         <p className='text-[18px] font-normal mb-[15px]'>{product.name}</p>
                         <p className='text-[18px] font-normal py-[15px] bg-[#3db460] text-white text-center rounded-[10px]'>{product.number}</p>

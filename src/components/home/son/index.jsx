@@ -36,7 +36,7 @@ const Son = () => {
                             className='w-[220px] border rounded-[10px] cursor-pointer' 
                             onClick={() => handleProductClick(item.id)} // Add click handler
                         >
-                            <img src={item.image} alt={item.title} />
+                            <img src={item.image} alt={item.title} className='h-[218px]'/>
                             <div className='py-[10px] px-[10px]'>
                                 <p className='text-[18px] font-bold text-[#000000]'>{item.price} Azn</p>
                                 <p className='truncate text-[16px] font-normal text-[#212c3a]'>{item.title}</p>
