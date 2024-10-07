@@ -1,0 +1,250 @@
+{
+    "premium": [
+        {
+            "id": 1,
+            "title": "Classic T-Shirt",
+            "price": 29.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "High-quality cotton classic fit t-shirt.",
+            "categories": ["clothing", "men"],
+            "name": "John Doe",
+            "number": "555-123-4567"
+          },
+          {
+            "id": 2,
+            "title": "Women's Dress",
+            "price": 49.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Chic and comfortable dress, perfect for summer.",
+            "categories": ["clothing", "women"],
+            "name": "Jane Smith",
+            "number": "555-234-5678"
+          },
+          {
+            "id": 3,
+            "title": "Sneaker Shoes",
+            "price": 89.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Sneaker shoes that combine comfort and style.",
+            "categories": ["shoes", "men"],
+            "name": "Michael Brown",
+            "number": "555-345-6789"
+          },
+          {
+            "id": 4,
+            "title": "Backpack",
+            "price": 39.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Spacious backpack suitable for daily use.",
+            "categories": ["accessory", "bag"],
+            "name": "Emily Davis",
+            "number": "555-456-7890"
+          },
+          {
+            "id": 5,
+            "title": "Winter Jacket",
+            "price": 129.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Warm jacket designed for cold weather.",
+            "categories": ["clothing", "men"],
+            "name": "David Wilson",
+            "number": "555-567-8901"
+          },
+          {
+            "id": 6,
+            "title": "Summer Sandals",
+            "price": 34.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Lightweight and comfortable summer sandals.",
+            "categories": ["shoes", "women"],
+            "name": "Sophia Johnson",
+            "number": "555-678-9012"
+          },
+          {
+            "id": 7,
+            "title": "Smartwatch",
+            "price": 199.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Ideal smartwatch for fitness tracking and notifications.",
+            "categories": ["technology", "accessory"],
+            "name": "James Williams",
+            "number": "555-789-0123"
+          },
+          {
+            "id": 8,
+            "title": "Coffee Mug",
+            "price": 12.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Elegant ceramic coffee mug.",
+            "categories": ["home goods", "kitchen"],
+            "name": "Olivia Garcia",
+            "number": "555-890-1234"
+          }
+    ],
+
+    "vip": [
+        {
+            "id": 1,
+            "title": "Classic T-Shirt",
+            "price": 29.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "High-quality cotton classic fit t-shirt.",
+            "categories": ["clothing", "men"],
+            "name": "John Doe",
+            "number": "555-123-4567"
+          },
+          {
+            "id": 2,
+            "title": "Women's Dress",
+            "price": 49.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Chic and comfortable dress, perfect for summer.",
+            "categories": ["clothing", "women"],
+            "name": "Jane Smith",
+            "number": "555-234-5678"
+          },
+          {
+            "id": 3,
+            "title": "Sneaker Shoes",
+            "price": 89.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Sneaker shoes that combine comfort and style.",
+            "categories": ["shoes", "men"],
+            "name": "Michael Brown",
+            "number": "555-345-6789"
+          },
+          {
+            "id": 4,
+            "title": "Backpack",
+            "price": 39.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Spacious backpack suitable for daily use.",
+            "categories": ["accessory", "bag"],
+            "name": "Emily Davis",
+            "number": "555-456-7890"
+          },
+          {
+            "id": 5,
+            "title": "Winter Jacket",
+            "price": 129.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Warm jacket designed for cold weather.",
+            "categories": ["clothing", "men"],
+            "name": "David Wilson",
+            "number": "555-567-8901"
+          },
+          {
+            "id": 6,
+            "title": "Summer Sandals",
+            "price": 34.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Lightweight and comfortable summer sandals.",
+            "categories": ["shoes", "women"],
+            "name": "Sophia Johnson",
+            "number": "555-678-9012"
+          },
+          {
+            "id": 7,
+            "title": "Smartwatch",
+            "price": 199.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Ideal smartwatch for fitness tracking and notifications.",
+            "categories": ["technology", "accessory"],
+            "name": "James Williams",
+            "number": "555-789-0123"
+          },
+          {
+            "id": 8,
+            "title": "Coffee Mug",
+            "price": 12.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Elegant ceramic coffee mug.",
+            "categories": ["home goods", "kitchen"],
+            "name": "Olivia Garcia",
+            "number": "555-890-1234"
+          }
+    ],
+
+    "son": [
+        {
+            "id": 1,
+            "title": "Classic T-Shirt",
+            "price": 29.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "High-quality cotton classic fit t-shirt.",
+            "categories": ["clothing", "men"],
+            "name": "John Doe",
+            "number": "555-123-4567"
+          },
+          {
+            "id": 2,
+            "title": "Women's Dress",
+            "price": 49.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Chic and comfortable dress, perfect for summer.",
+            "categories": ["clothing", "women"],
+            "name": "Jane Smith",
+            "number": "555-234-5678"
+          },
+          {
+            "id": 3,
+            "title": "Sneaker Shoes",
+            "price": 89.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Sneaker shoes that combine comfort and style.",
+            "categories": ["shoes", "men"],
+            "name": "Michael Brown",
+            "number": "555-345-6789"
+          },
+          {
+            "id": 4,
+            "title": "Backpack",
+            "price": 39.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Spacious backpack suitable for daily use.",
+            "categories": ["accessory", "bag"],
+            "name": "Emily Davis",
+            "number": "555-456-7890"
+          },
+          {
+            "id": 5,
+            "title": "Winter Jacket",
+            "price": 129.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Warm jacket designed for cold weather.",
+            "categories": ["clothing", "men"],
+            "name": "David Wilson",
+            "number": "555-567-8901"
+          },
+          {
+            "id": 6,
+            "title": "Summer Sandals",
+            "price": 34.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Lightweight and comfortable summer sandals.",
+            "categories": ["shoes", "women"],
+            "name": "Sophia Johnson",
+            "number": "555-678-9012"
+          },
+          {
+            "id": 7,
+            "title": "Smartwatch",
+            "price": 199.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Ideal smartwatch for fitness tracking and notifications.",
+            "categories": ["technology", "accessory"],
+            "name": "James Williams",
+            "number": "555-789-0123"
+          },
+          {
+            "id": 8,
+            "title": "Coffee Mug",
+            "price": 12.99,
+            "image": "https://media.gamestop.com/i/gamestop/20009351?$pdp$",
+            "description": "Elegant ceramic coffee mug.",
+            "categories": ["home goods", "kitchen"],
+            "name": "Olivia Garcia",
+            "number": "555-890-1234"
+          }
+    ]
+}

@@ -3,6 +3,7 @@ import MainContainer from '../../common/mainContainer'
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,10 +15,10 @@ const Header = () => {
                 <p className='text-[15px] font-normal text-[#8d94ad]'>(012) 505-85-85</p>
             </div>
             <div className='flex gap-[20px]'>
-                <div className='flex gap-[5px]'>
+                <Link to={'/wishlist'}><div className='flex gap-[5px]'>
                 <FaHeart className='text-[#8d94ad]  h-[25px] w-[25px]'/>
                 <p className='text-[15px] font-normal text-[#8d94ad]'>Seçilmişlər</p>
-                </div>
+                </div></Link>
                 <div className='flex gap-[5px]'>
                 <MdAccountCircle className='text-[#8d94ad]  h-[25px] w-[25px]'/>
                 <p className='text-[15px] font-normal text-[#8d94ad]'>Giriş</p>
@@ -28,7 +29,7 @@ const Header = () => {
       <div className='bg-[#ff4f08] py-[15px] '>
         <MainContainer>
         <div className='flex justify-between'>
-        <h1 className='text-white text-[30px] font-bold'>tap.az</h1>
+        <Link to={'/'}><h1 className='text-white text-[30px] font-bold'>tap.az</h1></Link>
         
         <div>
             <input type="text" name="" id=""  className='py-[9px] px-[9px] border rounded-l-[8px] w-[400px]'/>
