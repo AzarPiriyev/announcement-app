@@ -45,8 +45,8 @@ const Header = () => {
         <Link to={'/'}><h1 className='text-white text-[30px] font-bold'>tap.az</h1></Link>
         
         <div>
-            <input type="text" name="" id=""  className='py-[9px] px-[9px] border rounded-l-[8px] w-[400px]'/>
-            <button className='bg-[#7ed321] py-[10px] px-[10px] rounded-r-[8px] text-white'>Tap</button>
+            <input type="text" name="search" id=""  className='py-[9px] px-[9px] border rounded-l-[8px] w-[400px]'/>
+            <button className='bg-[#7ed321] py-[10px] px-[10px] rounded-r-[8px] text-white'>Tap</button>           
         </div>
         <div className='flex gap-[20px]'>
         <Link to={'/account'}><button className='bg-[#7ed321] py-[10px] px-[10px] rounded-[8px] text-white'>Kabinet</button></Link>

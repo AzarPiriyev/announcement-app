@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MainContainer from '../common/mainContainer';
-import Modal from '../common/Modal'; // Modal bileşenini import ediyoruz
+import Modal from '../common/modal'; // Modal bileşenini import ediyoruz
 
 const Account = () => {
   const [products, setProducts] = useState([]); // Ürünleri tutmak için state
@@ -28,6 +28,18 @@ const Account = () => {
   const handleEdit = (product) => {
     setSelectedProduct(product); // Seçilen ürünü state'e set et
     setIsModalOpen(true); // Modalı aç
+  };
+
+  // Ürünü silme fonksiyonu
+  const handleDelete = async (id) => {
+    try {
+      await fetch(`http://localhost:3000/son/${id}`, {
+        method: 'DELETE',
+      });
+      setProducts(products.filter(product => product.id !== id)); // Ürünü state'ten çıkar
+    } catch (error) {
+      console.error('Ürün silinirken hata oluştu:', error);
+    }
   };
 
   // Modal'daki formu yönetmek için input değişikliklerini işleme
@@ -69,12 +81,18 @@ const Account = () => {
                   <p className='text-[18px] font-bold text-[#000000]'>{product.price} Azn</p>
                   <p className='truncate text-[16px] font-normal text-[#212c3a]'>{product.title}</p>
                 </div>
-                <div className='py-[10px] px-[10px]'>
+                <div className='py-[10px] px-[10px] flex justify-between'>
                   <button 
                     onClick={() => handleEdit(product)} // Edit butonuna tıklanınca modal açılır
                     className='bg-[#ff4f08] text-white py-1 px-3 rounded-lg font-semibold hover:bg-[#ff6f30] transition duration-300'
                   >
-                    Düzenle
+                    Düzəlt
+                  </button>
+                  <button 
+                    onClick={() => handleDelete(product.id)} // Sil butonuna tıklanınca ürün silinir
+                    className='bg-red-500 text-white py-1 px-3 rounded-lg font-semibold hover:bg-red-600 transition duration-300'
+                  >
+                    Sil
                   </button>
                 </div>
               </div>

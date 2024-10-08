@@ -27,3 +27,4 @@ export const getUsers = async () => {
     const users = await response.json();
     return users;
 };
+
