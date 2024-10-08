@@ -1,9 +1,9 @@
 import React from 'react';
 import MainContainer from '../common/mainContainer';
-import { useStore } from '../../store'; // Zustand store'unu içe aktar
+import { useStore } from '../../store'; 
 
 const Wishlist = () => {
-    const { customFav } = useStore(); // Favori ürünleri al
+    const { customFav } = useStore(); 
 
     return (
         <MainContainer>

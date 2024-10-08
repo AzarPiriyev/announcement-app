@@ -4,20 +4,20 @@ import MainContainer from '../../common/mainContainer'
 const Work = () => {
     const [products, setProducts] = useState([]);
 
-  // JSON Server'dan ürünleri çekme
+  
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3000/son'); // API URL'i
+        const response = await fetch('http://localhost:3000/son'); 
         const data = await response.json();
         const workProducts = data.filter(item => item.categories === 'İş elanlari'); // Sadece "Elektronika" kategorisindeki ürünleri filtrele
-        setProducts(workProducts); // Filtrelenmiş ürünleri state'e set et
+        setProducts(workProducts); 
       } catch (error) {
         console.error('Ürünler yüklenirken hata oluştu:', error);
       }
     };
 
-    fetchProducts(); // sayfa yüklendiğinde ürünleri çek
+    fetchProducts(); 
   }, []);
   return (
     <MainContainer>

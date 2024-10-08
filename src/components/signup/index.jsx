@@ -20,7 +20,7 @@ const Signup = () => {
         try {
             await axios.post('http://localhost:3000/users', { name, email, password });
             alert('Account created successfully');
-            navigate('/login'); // Redirect to login page
+            navigate('/login'); 
         } catch (error) {
             console.error('Error creating account:', error);
             alert('There was an error creating your account');

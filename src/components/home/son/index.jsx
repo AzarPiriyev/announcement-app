@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // useHistory yerine useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import MainContainer from '../../common/mainContainer';
 import { getSon } from '../../../../api/service';
 
 const Son = () => {
     const [data, setData] = useState([]);
-    const navigate = useNavigate(); // Initialize navigate
+    const navigate = useNavigate(); 
 
     const fetchData = async () => {
         const son = await getSon();
@@ -17,7 +17,7 @@ const Son = () => {
     }, []);
 
     const handleProductClick = (id) => {
-        navigate(`/detail/${id}`); // Navigate to ProductDetail with the ID
+        navigate(`/detail/${id}`); 
     };
 
     

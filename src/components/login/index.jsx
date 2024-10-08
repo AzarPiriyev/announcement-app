@@ -11,8 +11,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // Formun varsayılan davranışını önleyin
-    setError(''); // Hata mesajını sıfırla
+    e.preventDefault(); 
+    setError(''); 
 
     try {
       const response = await axios.get('http://localhost:3000/users');
@@ -22,10 +22,10 @@ const Login = () => {
 
       if (user) {
         alert('Login successful!');
-        localStorage.setItem("isLogin", "true"); // Giriş bilgilerini kaydet
+        localStorage.setItem("isLogin", "true"); 
         localStorage.setItem('email',email);
-        setFields({ isLogin: true }); // Giriş durumunu güncelle
-        navigate('/'); // Ana sayfaya yönlendir
+        setFields({ isLogin: true }); 
+        navigate('/'); 
       } else {
         setError('Invalid email or password');
       }

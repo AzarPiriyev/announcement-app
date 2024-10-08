@@ -1,58 +1,58 @@
 import React, { useEffect, useState } from 'react';
 import MainContainer from '../common/mainContainer';
-import Modal from '../common/modal'; // Modal bileşenini import ediyoruz
+import Modal from '../common/modal'; 
 
 const Account = () => {
-  const [products, setProducts] = useState([]); // Ürünleri tutmak için state
-  const userEmail = localStorage.getItem('email'); // Giriş yapan kullanıcının e-posta adresini al
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal kontrolü için state
-  const [selectedProduct, setSelectedProduct] = useState(null); // Düzenlenecek ürün için state
+  const [products, setProducts] = useState([]); 
+  const userEmail = localStorage.getItem('email'); 
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [selectedProduct, setSelectedProduct] = useState(null); 
 
-  // Ürünleri JSON Server'dan çekme
+  
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const response = await fetch('http://localhost:3000/son');
         const data = await response.json();
-        const userProducts = data.filter(product => product.userEmail === userEmail); // Kullanıcının ürünlerini filtrele
-        setProducts(userProducts); // Sadece o kullanıcının ürünlerini state'e set et
+        const userProducts = data.filter(product => product.userEmail === userEmail); 
+        setProducts(userProducts); 
       } catch (error) {
         console.error('Ürünler yüklenirken hata oluştu:', error);
       }
     };
 
-    fetchProducts(); // sayfa yüklendiğinde ürünleri çek
+    fetchProducts(); 
   }, [userEmail]);
 
-  // Düzenleme modalını açma fonksiyonu
+  
   const handleEdit = (product) => {
-    setSelectedProduct(product); // Seçilen ürünü state'e set et
-    setIsModalOpen(true); // Modalı aç
+    setSelectedProduct(product); 
+    setIsModalOpen(true); 
   };
 
-  // Ürünü silme fonksiyonu
+  
   const handleDelete = async (id) => {
     try {
       await fetch(`http://localhost:3000/son/${id}`, {
         method: 'DELETE',
       });
-      setProducts(products.filter(product => product.id !== id)); // Ürünü state'ten çıkar
+      setProducts(products.filter(product => product.id !== id)); 
     } catch (error) {
       console.error('Ürün silinirken hata oluştu:', error);
     }
   };
 
-  // Modal'daki formu yönetmek için input değişikliklerini işleme
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setSelectedProduct({ ...selectedProduct, [name]: value }); // Seçilen ürünü güncelle
+    setSelectedProduct({ ...selectedProduct, [name]: value }); 
   };
 
-  // Ürün düzenleme formunu gönderme
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Ürünü güncelleme
+    
     await fetch(`http://localhost:3000/son/${selectedProduct.id}`, {
       method: 'PUT',
       headers: {
@@ -61,9 +61,9 @@ const Account = () => {
       body: JSON.stringify(selectedProduct),
     });
 
-    // Modalı kapat ve sayfayı yeniden yükle
+    
     setIsModalOpen(false);
-    window.location.reload(); // Değişiklik sonrası sayfayı yenile
+    window.location.reload(); 
   };
 
   return (

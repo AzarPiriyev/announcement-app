@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MainContainer from '../common/mainContainer';
 import { useNavigate } from 'react-router-dom';
-import { useStore } from '../../store'; // isLogin durumunu kontrol etmek için
+import { useStore } from '../../store'; 
 
 const New = () => {
   const navigate = useNavigate();
@@ -13,17 +13,17 @@ const New = () => {
     image: '',
     name: '',
     number: '',
-    userEmail: '' // Kullanıcının e-posta adresini ekleyin
+    userEmail: '' 
   });
 
-  // Giriş yapmamış kullanıcıları login sayfasına yönlendirin
+  
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLogin");
-    const userEmail = localStorage.getItem('email'); // Kullanıcının e-posta adresini alın
+    const userEmail = localStorage.getItem('email'); 
     if (!isLoggedIn) {
       navigate('/login');
     } else {
-      setFormData(prevState => ({ ...prevState, userEmail })); // FormData'ya e-posta bilgisini ekleyin
+      setFormData(prevState => ({ ...prevState, userEmail })); 
     }
   }, [navigate]);
 
@@ -35,16 +35,16 @@ const New = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Ürünü JSON Server'a ekleme
+    
     await fetch('http://localhost:3000/son', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ ...formData, id: Date.now().toString() }), // ID'yi otomatik oluştur
+      body: JSON.stringify({ ...formData, id: Date.now().toString() }), 
     });
 
-    // Ürün eklendikten sonra Son sayfasına yönlendir
+    
     navigate('/son');
   };
   return (

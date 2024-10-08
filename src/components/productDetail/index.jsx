@@ -23,11 +23,11 @@ const ProductDetail = () => {
         const isFavorited = customFav.some(item => item.id === product.id);
         
         if (isFavorited) {
-            // Ürün zaten favorilerdeyse sil
+            
             const updatedFavorites = customFav.filter(item => item.id !== product.id);
             setFields({ customFav: updatedFavorites });
         } else {
-            // Ürün favorilere ekle
+            
             setFields({ customFav: [...customFav, product] });
         }
     };

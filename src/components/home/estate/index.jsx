@@ -4,20 +4,20 @@ import MainContainer from '../../common/mainContainer'
 const Estate = () => {
     const [products, setProducts] = useState([]);
 
-  // JSON Server'dan ürünleri çekme
+  
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3000/son'); // API URL'i
+        const response = await fetch('http://localhost:3000/son'); 
         const data = await response.json();
         const estateProducts = data.filter(item => item.categories === 'Daşinmaz əmlak'); // Sadece "Elektronika" kategorisindeki ürünleri filtrele
-        setProducts(estateProducts); // Filtrelenmiş ürünleri state'e set et
+        setProducts(estateProducts); 
       } catch (error) {
         console.error('Ürünler yüklenirken hata oluştu:', error);
       }
     };
 
-    fetchProducts(); // sayfa yüklendiğinde ürünleri çek
+    fetchProducts(); 
   }, []);
   return (
     <MainContainer>

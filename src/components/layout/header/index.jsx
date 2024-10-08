@@ -11,9 +11,9 @@ const Header = () => {
   const { isLogin, setFields } = useStore();
 
   const handleLogout = () => {
-    localStorage.removeItem("isLogin"); // Kullanıcı giriş bilgilerini sil
-    localStorage.removeItem("username"); // Kullanıcı adını sil
-    setFields({ isLogin: false }); // Durumu güncelle
+    localStorage.removeItem("isLogin"); 
+    localStorage.removeItem("username"); 
+    setFields({ isLogin: false }); 
   };
   return (
     <div>
